@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 
 const STORAGE_KEY = 'phonebook-storage';
-
+   // eslint-disable-next-line
   // const getInitialContacts = ()=>{
   //   const storageContacts = localStorage.getItem(STORAGE_KEY);  
 
@@ -16,7 +16,7 @@ const STORAGE_KEY = 'phonebook-storage';
   // }
 
 export const App = () => {
-
+   // eslint-disable-next-line
   // useEffect(()=>{         
   //     localStorage.setItem(STORAGE_KEY, JSON.stringify(contacts));  
   //  },[contacts]);        
