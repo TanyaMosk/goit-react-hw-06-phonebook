@@ -1,11 +1,12 @@
 import ContactList from './ContactList';
 import ContactForm from './ContactForm';
 import Filter from "./Filter";
-import { useEffect, useState } from "react";
 
+// eslint-disable-next-line
+// import { useEffect, useState } from "react";
 
-const STORAGE_KEY = 'phonebook-storage';
-   // eslint-disable-next-line
+// const STORAGE_KEY = 'phonebook-storage';
+   
   // const getInitialContacts = ()=>{
   //   const storageContacts = localStorage.getItem(STORAGE_KEY);  
 
