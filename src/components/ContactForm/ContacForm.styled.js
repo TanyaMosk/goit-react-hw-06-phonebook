@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { Form, Field, ErrorMessage } from 'formik';
 
 export const StyledForm = styled(Form)`
-background-color: white; 
+/* background-color: white;  */
+background-color: slategray;
+background-color: transparent;
   margin: auto;
   padding: 20px;  
   border-radius: 10px;
@@ -57,4 +59,9 @@ color: red;
 position: absolute;
 top: 50%;
 right: 5%;
+`;
+
+export const TitleContactForm = styled.h2`
+text-transform: uppercase;
+color: white;
 `;

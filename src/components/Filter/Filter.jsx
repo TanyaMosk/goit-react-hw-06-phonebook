@@ -1,5 +1,5 @@
 import { setContactFilter } from "redux/actions";
-import { InputFilter, TextFilter } from "./Filter.styled";
+import { InputFilter, TextFilter, TitleFilter } from "./Filter.styled";
 import { useDispatch } from "react-redux";
 
 
@@ -7,7 +7,8 @@ const Filter = () => {
   const dispatch = useDispatch();
 
   return (
-    <>      
+    <> 
+    <TitleFilter>Contacts</TitleFilter>  
       <TextFilter>Find contacts by name</TextFilter>
       <InputFilter
         type="text"        

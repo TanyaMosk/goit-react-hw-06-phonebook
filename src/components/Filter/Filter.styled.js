@@ -20,3 +20,8 @@ font-weight: 600;
 text-transform: uppercase;
 color:gainsboro;
 `;
+
+export const TitleFilter = styled.h2`
+text-transform: uppercase;
+color: white;
+`;

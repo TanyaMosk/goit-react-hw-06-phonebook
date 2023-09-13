@@ -1,7 +1,7 @@
 import { Formik } from 'formik';
 import { nanoid } from 'nanoid'
 import * as Yup from 'yup';
-import { Button, StyledField, StyledForm, StyledLabel,StyledError } from './ContacForm.styled';
+import { Button, StyledField, StyledForm, StyledLabel, StyledError , TitleContactForm} from './ContacForm.styled';
 import { useDispatch } from "react-redux";
 import { addContacts } from 'redux/actions';
 
@@ -21,7 +21,9 @@ const ContactForm = () => {
 
   const dispatch = useDispatch();
   
-    return (
+  return (
+    <>
+    <TitleContactForm>Phonebook</TitleContactForm>
         <Formik
         initialValues={{
           name: '',
@@ -33,6 +35,7 @@ const ContactForm = () => {
               actions.resetForm();          
             }}
       >
+        
       <StyledForm>
         <StyledLabel>Name
         <StyledField type="text"
@@ -56,6 +59,7 @@ const ContactForm = () => {
         <Button type="submit">Add contact</Button>
       </StyledForm>
         </Formik>
+    </>
     )
 }
 
