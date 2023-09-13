@@ -17,4 +17,6 @@ padding: 4px 10px;
 
 export const TextFilter = styled.p`
 font-weight: 600;
+text-transform: uppercase;
+color:gainsboro;
 `;

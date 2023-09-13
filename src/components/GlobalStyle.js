@@ -11,7 +11,8 @@ body {
   /* background-color: whitesmoke; */
   width: 400px;
   margin: auto;  
-  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);   
+  /* background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);    */
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
   background-attachment: fixed;
 }
 
