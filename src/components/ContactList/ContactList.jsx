@@ -4,14 +4,16 @@ import { useDispatch, useSelector } from "react-redux";
 
 const ContactList = () => {
   const dispatch = useDispatch();
-  const { contacts } = useSelector(state => state.contacts);
-  const { filter } = useSelector(state => state.filter);
+  const {contacts} = useSelector(state => state.contacts);
+  const {filter} = useSelector(state => state.filter);
+  // console.log(contacts)
  
   const visibleContacts = contacts.filter(contact => contact.name.toLowerCase().includes(filter.toLowerCase()));
+  // console.log(visibleContacts);
 
   return (
     <List>
-      {visibleContacts.map(({ id, name, number }) => (
+      {visibleContacts.map(({id, name, number}) => (        
         <li key={id}>
           <WrapItem>
             <WrappText>
