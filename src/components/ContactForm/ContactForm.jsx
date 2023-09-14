@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid'
 import * as Yup from 'yup';
 import { Button, StyledField, StyledForm, StyledLabel, StyledError , TitleContactForm} from './ContacForm.styled';
 import { useDispatch } from "react-redux";
-import { addContacts } from 'redux/actions';
+import { addContacts } from 'redux/contactsSlice';
 
 const SignupSchema = Yup.object().shape({
    name: Yup.string()

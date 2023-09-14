@@ -1,4 +1,4 @@
-import { setContactFilter } from "redux/actions";
+import { setContactFilter } from "redux/filterSlice";
 import { InputFilter, TextFilter, TitleFilter } from "./Filter.styled";
 import { useDispatch } from "react-redux";
 

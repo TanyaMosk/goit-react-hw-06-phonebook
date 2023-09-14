@@ -1,4 +1,4 @@
-import { deleteContacts } from "redux/actions";
+import { deleteContacts } from "redux/contactsSlice";
 import { DeleteBtn, List, WrapItem, Text, WrappText } from "./ContactList.styled"
 import { useDispatch, useSelector } from "react-redux";
 
