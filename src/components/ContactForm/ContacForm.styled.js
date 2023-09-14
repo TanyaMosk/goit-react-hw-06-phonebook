@@ -21,6 +21,7 @@ export const StyledLabel = styled.label`
 position: relative;
 display:grid;
 gap:10px;
+color:gainsboro;
 `;
 
 export const StyledField = styled(Field)`
