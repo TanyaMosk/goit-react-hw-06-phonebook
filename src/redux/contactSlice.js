@@ -22,20 +22,20 @@ const slice = createSlice({
                 alert(`${action.payload.name} is already in contacts.`);
                 return state;
             }
-            return { 
+            return {  
                 ...state,
                 contacts: [...state.contacts, action.payload],               
             };
         },
         deleteContacts(state, action) {
-            return {
+            return {    
                 ...state,
                 contacts: [...state.contacts.filter(contact => contact.id !== action.payload)]
             };
         },
          setContactFilter(state, action) {
-            return {                
-                 ...state,
+            return {               
+                ...state,
             filter: action.payload,
             };
         }

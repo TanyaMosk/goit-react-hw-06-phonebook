@@ -7,11 +7,9 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-color: whitesmoke; */
+  -moz-osx-font-smoothing: grayscale;  
   width: 400px;
-  margin: auto;  
-  /* background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);    */
+  margin: auto;    
   background: linear-gradient(to top, #09203f 0%, #537895 100%);
   background-attachment: fixed;
 }

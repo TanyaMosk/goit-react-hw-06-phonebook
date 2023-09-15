@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid'
 import * as Yup from 'yup';
 import { Button, StyledField, StyledForm, StyledLabel, StyledError , TitleContactForm} from './ContacForm.styled';
 import { useDispatch } from "react-redux";
-import { addContacts } from 'redux/contactsSlice';
+import { addContacts } from 'redux/contactSlice';
 
 const SignupSchema = Yup.object().shape({
    name: Yup.string()
@@ -24,7 +24,7 @@ const ContactForm = () => {
   return (
     <>
     <TitleContactForm>Phonebook</TitleContactForm>
-        <Formik
+      <Formik
         initialValues={{
           name: '',
           number: '',
@@ -58,7 +58,7 @@ const ContactForm = () => {
                   
         <Button type="submit">Add contact</Button>
       </StyledForm>
-        </Formik>
+      </Formik>
     </>
     )
 }

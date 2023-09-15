@@ -5,10 +5,10 @@ import Filter from "./Filter";
 export const App = () => {     
        
   return (
-    <div>      
+    <>      
       <ContactForm />      
       <Filter />
       <ContactList />
-    </div>
+    </>
   )
 };

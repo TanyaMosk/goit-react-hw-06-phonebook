@@ -1,5 +1,5 @@
-import { deleteContacts } from "redux/contactsSlice";
-import { DeleteBtn, List, WrapItem, Text, WrappText } from "./ContactList.styled"
+import { deleteContacts } from "redux/contactSlice";
+import { DeleteBtn, List, WrapItem, Text, WrappText, IconClose } from "./ContactList.styled"
 import { useDispatch, useSelector } from "react-redux";
 
 const ContactList = () => {
@@ -17,7 +17,9 @@ const ContactList = () => {
             <Text>{name}</Text>
             <Text> {number}</Text>
            </WrappText>
-            <DeleteBtn onClick={() => dispatch(deleteContacts(id))} >Delete</DeleteBtn>
+            <DeleteBtn onClick={() => dispatch(deleteContacts(id))} >
+              <IconClose />
+            </DeleteBtn>
           </WrapItem>
         </li>
       ))}
